@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>linearama</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -58,8 +57,8 @@
         .font-newsreader {
             font-family: 'Newsreader', serif;
         }
-        .font-urbanist {
-            font-family: 'Nunito', sans-serif;
+        .font-lacquer {
+            font-family: 'Lacquer', cursive;
         }
     </style>
 </head>
@@ -79,7 +78,7 @@
             
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-center leading-tight mb-6">
                 <span id="typed-newsreader" class="font-newsreader"></span>
-                <span id="typed-bricolage" class="font-bricolage"></span>
+                <span id="typed-lacquer" class="font-lacquer"></span>
             </h2>
             
             <div class="flex flex-col sm:flex-row gap-4">
@@ -96,7 +95,7 @@
         const part1 = "The classic feel of notes,";
         const part2 = " redrawn for today";
         const target1 = document.getElementById('typed-newsreader');
-        const target2 = document.getElementById('typed-bricolage');
+        const target2 = document.getElementById('typed-lacquer');
         let i = 0;
         let j = 0;
         let brInserted = false;
