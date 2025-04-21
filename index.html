@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linearama</title>
+    <!-- Use PNG as favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <!-- Playful font for navbar title -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'body': ['Urbanist', 'sans-serif'],
+                        'bricolage': ['Bricolage Grotesque', 'sans-serif'],
+                    },
+                    colors: {
+                        background: '#FEEECD',
+                        primary: {
+                            DEFAULT: '#E74C3C',
+                            hover: '#D44235',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .typed-cursor {
+            display: inline-block;
+            width: 1ch;
+            animation: blink 1s steps(1) infinite;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-background text-gray-800 font-body">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bricolage text-primary">linearama</h1>
+            <nav>
+                <!-- Navigation links can go here -->
+            </nav>
+        </div>
+
+        <div class="mt-2 flex flex-col items-center">
+            <div class="w-64 md:w-72 mb-6 overflow-hidden">
+                <img src="assets/logo.png" alt="Linearama" class="w-full h-auto shadow-xl rounded-lg">
+            </div>
+            
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-center leading-tight mb-6 font-body">
+                <span id="typed-text"></span><span class="typed-cursor">|</span>
+            </h2>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#download" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-medium text-lg">Download Now</a>
+                <a href="#learn-more" class="border-2 border-primary text-primary hover:bg-primary/5 transition-colors px-8 py-3 rounded-lg font-medium text-lg">Learn More</a>
+            </div>
+        </div>
+        
+        <footer class="mt-24 text-center text-gray-500">
+            <p>© 2025 Linearama. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        // Typing effect for the headline
+        const text = "The classic feel of notes,\nredrawn for today.";
+        const target = document.getElementById('typed-text');
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                if (text[i] === "\n") {
+                    target.innerHTML += "<br>";
+                } else {
+                    target.innerHTML += text[i];
+                }
+                i++;
+                setTimeout(type, 60);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', type);
+    </script>
+</body>
+</html>
