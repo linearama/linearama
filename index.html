@@ -45,15 +45,6 @@
                 linear-gradient(to bottom, rgba(156,191,202,0.35) 1px, transparent 1px);
             background-size: 32px 32px;
         }
-        .typed-cursor {
-            display: inline-block;
-            width: 1ch;
-            animation: blink 1s steps(1) infinite;
-        }
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
         .font-newsreader {
             font-family: 'Newsreader', serif;
         }
@@ -64,36 +55,32 @@
 </head>
 <body class="text-gray-800 font-body">
     <div class="squared-bg"></div>
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 z-10">
-        <div class="flex justify-between items-center mb-4">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20 z-10 min-h-screen flex flex-col justify-center items-center">
+        <div class="flex justify-between items-center mb-4 w-full">
             <h1 class="text-2xl font-bricolage text-primary">linearama</h1>
             <nav>
+                <a href="#download" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-bricolage text-lg">Download</a>
             </nav>
         </div>
 
-        <div class="mt-2 flex flex-col items-center">
-            <div class="w-64 md:w-72 mb-6 overflow-hidden">
-                <img src="assets/logo.png" alt="Linearama" class="w-full h-auto shadow-xl rounded-lg">
+        <div class="mt-2 flex flex-col items-center flex-1 justify-center">
+            <div class="w-80 md:w-96 mb-6 overflow-hidden">
+                <img src="assets/logo.png" alt="Linearama" class="w-full h-auto rounded-lg">
             </div>
             
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-medium text-center leading-tight mb-6">
                 <span id="typed-newsreader" class="font-newsreader"></span>
                 <span id="typed-lacquer" class="font-lacquer"></span>
             </h2>
-            
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#download" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-bricolage text-lg">Download Now</a>
-                <a href="#learn-more" class="border-2 border-primary text-primary hover:bg-primary/5 transition-colors px-8 py-3 rounded-lg font-bricolage text-lg">Learn More</a>
-            </div>
         </div>
         
-        <footer class="mt-24 text-center text-gray-500 font-bricolage">
+        <footer id="footer" class="fixed bottom-0 left-0 w-full text-left text-gray-500 font-bricolage py-4 px-8 shadow">
             <p>© 2025 Linearama. All rights reserved.</p>
         </footer>
     </div>
     <script>
-        const part1 = "The classic feel of notes,";
-        const part2 = " redrawn for today";
+        const part1 = "Old-school notes,";
+        const part2 = "redrawn for today.";
         const target1 = document.getElementById('typed-newsreader');
         const target2 = document.getElementById('typed-lacquer');
         let i = 0;
