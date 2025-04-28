@@ -29,6 +29,9 @@
         }
     </script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             background-color: #FFFEDA;
             position: relative;
@@ -51,20 +54,29 @@
         .font-lacquer {
             font-family: 'Lacquer', cursive;
         }
+        .highlight {
+            background-color: #F7B6A3; /* Slightly stronger, calm red */
+            color: #111;
+            border-radius: 0.3em;
+            padding: 0.08em 0.3em;
+            box-decoration-break: clone;
+        }
     </style>
 </head>
 <body class="text-gray-800 font-body">
     <div class="squared-bg"></div>
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20 z-10 min-h-screen flex flex-col justify-center items-center">
         <div class="flex justify-between items-center mb-4 w-full">
-            <h1 class="text-2xl font-fredoka text-primary">linearama</h1>
+            <div class="flex items-center">
+                <h1 class="text-2xl font-fredoka text-primary">linearama</h1>
+            </div>
             <nav>
-                <a href="#download" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-fredoka text-lg">Download</a>
+                <a href="https://discord.gg/8XntcJpg" target="_blank" rel="noopener" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-fredoka text-lg">Join the beta</a>
             </nav>
         </div>
 
         <div class="mt-2 flex flex-col items-center flex-1 justify-center">
-            <div class="w-80 md:w-96 mb-6 overflow-hidden">
+            <div class="w-64 md:w-80 mb-6 overflow-hidden">
                 <img src="assets/logo.png" alt="Linearama" class="w-full h-auto rounded-lg">
             </div>
             
@@ -72,12 +84,64 @@
                 <span id="typed-newsreader" class="font-newsreader"></span>
                 <span id="typed-lacquer" class="font-lacquer"></span>
             </h2>
+            
+            <div class="mt-8 mb-12 w-full max-w-4xl mx-auto">
+                <img src="assets/screenshot.png" alt="Linearama Screenshot" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
         </div>
         
-        <footer id="footer" class="fixed bottom-0 left-0 w-full text-left text-gray-500 font-fredoka py-4 px-8 shadow">
-            <p>© 2025 Linearama. All rights reserved.</p>
-        </footer>
-    </div>
+        <article class="w-full max-w-4xl mx-auto text-2xl md:text-3xl text-justify">
+            
+            <p class="block mb-10">
+                Linearama is built for one purpose: to make <span class="highlight">collecting notes</span> effortless.
+                Whether it’s a fleeting thought, an important task, a brilliant idea, or a cherished memory, creating a note is all it takes.
+                Capturing is <span class="highlight">instant</span>, <span class="highlight">simple</span>, and <span class="highlight">yours to keep</span>.
+            </p>
+            
+            <p class="block mb-10">
+                Collecting isn’t just about saving, it’s about <span class="highlight">owning</span>.
+                That’s why your notes live locally on your device.
+                They are always accessible, even offline.
+                If you want, you can <span class="highlight">sync them between devices</span> without giving up ownership or control.
+            </p>
+
+            <p class="block mb-10">
+                Linearama works the way you naturally take notes in real life.
+                You quickly jot things down into an <span class="highlight">inbox</span> without worrying about structure.
+                Organization can happen later, if needed.
+                There is no tagging, <span class="highlight">no setup overhead</span>, and no complicated systemsstanding between you and your thoughts.
+                The experience stays <span class="highlight">fast</span>, <span class="highlight">human</span>, and <span class="highlight">familiar</span>.
+            </p>
+
+            <p class="block mb-4">
+                Take a peek at how Linearama feels in action, here are some real <span class="highlight">screenshots</span> from the beta:
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="flex flex-col items-center">
+                    <img src="assets/text.png" alt="Text" class="rounded-lg shadow-md mb-2 w-full h-auto">
+                    <span class="text-sm text-gray-600 mt-1">Markdown</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/text_preview.png" alt="Text Preview" class="rounded-lg shadow-md mb-2 w-full h-auto">
+                    <span class="text-sm text-gray-600 mt-1">Markdown Preview</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/scribble.png" alt="Scribble" class="rounded-lg shadow-md mb-2 w-full h-auto">
+                    <span class="text-sm text-gray-600 mt-1">Scribble</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/search.png" alt="Search" class="rounded-lg shadow-md mb-2 w-full h-auto">
+                    <span class="text-sm text-gray-600 mt-1">Search</span>
+                </div>
+            </div>
+            
+        </article>
+        
+            
+    <footer id="footer" class="fixed bottom-0 left-0 w-full text-left text-gray-500 font-fredoka py-4 px-8 shadow">
+        <p>linearama app © 2025</p>
+    </footer>
     <script>
         const part1 = "Old-school notes,";
         const part2 = "redrawn for today.";
