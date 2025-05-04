@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>linearama</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,8 +13,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        'body': ['Newsreader', 'sans-serif'],
-                        'fredoka': ['Fredoka', 'sans-serif'],
+                        'body': ['EB Garamond', 'serif'],
                     },
                     colors: {
                         background: '#FEEECD',
@@ -48,8 +46,8 @@
                 linear-gradient(to bottom, rgba(156,191,202,0.35) 1px, transparent 1px);
             background-size: 32px 32px;
         }
-        .font-newsreader {
-            font-family: 'Newsreader', serif;
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
         }
         .font-lacquer {
             font-family: 'Lacquer', cursive;
@@ -68,10 +66,10 @@
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-20 z-10 min-h-screen flex flex-col justify-center items-center">
         <div class="flex justify-between items-center mb-4 w-full">
             <div class="flex items-center">
-                <h1 class="text-2xl font-fredoka text-primary">linearama</h1>
+                <h1 class="text-2xl text-primary font-sans font-bold">linearama</h1>
             </div>
             <nav>
-                <a href="https://discord.gg/8XntcJpg" target="_blank" rel="noopener" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg font-fredoka text-lg">Join the beta</a>
+                <a href="https://discord.gg/8XntcJpg" target="_blank" rel="noopener" class="bg-primary hover:bg-primary-hover transition-colors text-white px-8 py-3 rounded-lg text-lg font-sans font-bold">Join the beta</a>
             </nav>
         </div>
 
@@ -96,6 +94,13 @@
                 Linearama is built to let you collect notes effortlessly.
                 Whether it’s a fleeting thought, a scribble, a brilliant idea or a cherished memory, capturing it is <span class="highlight">instant</span>, <span class="highlight">simple</span>, and <span class="highlight">yours to keep</span>.
             </p>
+
+            <p class="block mb-10">
+                Linearama works the way you naturally take notes in real life.
+                You quickly jot things down into an <span class="highlight">inbox</span> without worrying about structure.
+                When you're ready, group notes into <span class="highlight">views</span>, based on <span class="highlight">tags</span> or <span class="highlight">content</span>.
+                Need even more organisation? Group views together into  <span class="highlight">organisers</span>!
+            </p>
             
             <p class="block mb-10">
                 Collecting isn’t just about saving, it’s about <span class="highlight">owning</span>.
@@ -104,27 +109,12 @@
                 If you want, you can <span class="highlight">sync them between devices</span> with iCloud without giving up ownership or control.
             </p>
 
-            <p class="block mb-10">
-                Linearama works the way you naturally take notes in real life.
-                You quickly jot things down into an <span class="highlight">inbox</span> without worrying about structure.
-                When you're ready, organize notes into <span class="highlight">books</span>, just like folders on your shelf.
-                Need a note to live in multiple places? That's where <span class="highlight">bookmarks</span> come in: they're flexible views of your notes that cut across books, making organization fluid and natural.
-            </p>
-
             <p class="block mb-4">
                 The experience stays <span class="highlight">fast</span> and <span class="highlight">familiar</span>, while giving you the freedom to organize your way.
                 Not sold yet? Take a peek at how Linearama feels in action, here are some real <span class="highlight">screenshots</span> from the beta:
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="flex flex-col items-center">
-                    <img src="assets/bookmark.png" alt="Text" class="rounded-lg shadow-md mb-2 w-full h-auto">
-                    <span class="text-sm text-gray-600 mt-1">Change bookmark query</span>
-                </div>
-                <div class="flex flex-col items-center">
-                    <img src="assets/bookmark_content.png" alt="Text Preview" class="rounded-lg shadow-md mb-2 w-full h-auto">
-                    <span class="text-sm text-gray-600 mt-1">Bookmark content</span>
-                </div>
                 <div class="flex flex-col items-center">
                     <img src="assets/text.png" alt="Text" class="rounded-lg shadow-md mb-2 w-full h-auto">
                     <span class="text-sm text-gray-600 mt-1">Markdown</span>
@@ -138,15 +128,15 @@
                     <span class="text-sm text-gray-600 mt-1">Scribble</span>
                 </div>
                 <div class="flex flex-col items-center">
-                    <img src="assets/search.png" alt="Search" class="rounded-lg shadow-md mb-2 w-full h-auto">
-                    <span class="text-sm text-gray-600 mt-1">Search</span>
+                    <img src="assets/view.png" alt="Search" class="rounded-lg shadow-md mb-2 w-full h-auto">
+                    <span class="text-sm text-gray-600 mt-1">View</span>
                 </div>
             </div>
             
         </article>
         
             
-    <footer id="footer" class="fixed bottom-0 left-0 w-full text-left text-gray-500 font-fredoka py-4 px-8 shadow">
+    <footer id="footer" class="fixed bottom-0 left-0 w-full text-left text-gray-500 py-4 px-8 shadow">
         <p>linearama app © 2025</p>
     </footer>
     <script>
