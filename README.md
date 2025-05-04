@@ -14,7 +14,7 @@ Linearama is built to let you collect notes effortlessly. Whether it's a fleetin
 - 🏷️ **Flexible Organization**: Group notes into views based on tags or content
 - 📱 **Local-First**: Your notes live on your device, always accessible
 - ☁️ **iCloud Sync**: Optional sync between devices without giving up control
-- ⚡ **Lightning Fast**: Snappy performance with a familiar interface
+- ⚡ **Fast**: Snappy performance with a familiar interface
 
 ## Get Started
 
@@ -22,10 +22,6 @@ Linearama is built to let you collect notes effortlessly. Whether it's a fleetin
 - 📱 [Join Beta (TestFlight)](https://testflight.apple.com/join/KSsARdDa)
 - 💬 [Join Discussions](https://github.com/linearama/linearama/discussions)
 - 📚 [Read Wiki](https://github.com/linearama/linearama/wiki)
-
-## Stay Connected
-
-Whether you're a new user or a long-time note-taker, we'd love to hear from you! Join our community discussions to share feedback, get help, or connect with other Linearama users.
 
 ---
 
